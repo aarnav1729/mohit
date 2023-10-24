@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "app.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "app.js" }
+    ],
+    "env": {
+      "MONGODB_URI": "mongodb+srv://aarrated:8kJgRcHbS18qbUcd@rr.oldse8x.mongodb.net/?retryWrites=true&w=majority",
+      "PORT": "3000"
+    }
+  }  
