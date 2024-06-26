@@ -1,0 +1,187 @@
+---
+import Icon from "astro-icon";
+import RowEntry from "../components/RowEntry.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import SocialIcon from "../components/SocialIcon.astro";
+
+import { SITE_TITLE } from "../config";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{SITE_TITLE}</title>
+  </head>
+  <body class="dark:bg-black">
+    <button id="dark-mode-toggle" class="mb-2 mt-2">
+      <Icon name="tabler:sun" class="w-6 h-6 dark:text-white" />
+    </button>
+
+    <div class="text-center mb-3">
+      <h1 class="text-2xl font-bold mb-1 dark:text-white">Mohit Chawla</h1>
+      <h2 class="text-base dark:text-white">
+        mohitchawla319@gmail.com | 7016392138
+      </h2>
+    </div>
+
+    <div id="professional-experience" class="mb-6">
+      <SectionTitle title="Professional Experience" />
+
+      <RowEntry
+        description="Media Marketing - Managing Key Accounts and ATL campaigns for Brands. Developed & executed ATL promotional strategies resulting in 30% compound Q-O-Q growth rate in scope of media campaigns of clients. Collaborated with Media Agencies, generating INR 1 CR in revenue by gaining 3 new clients and having exclusive campaigns for my category. Conceptualized innovative Print campaigns for Product launches of our major clients, resulting in increased brand engagement for clients. Boosted Market share for my assigned accounts by 10% through strategic initiatives, market analysis & effective relationship management."
+        name="Aug 2023 – Present"
+        title="Manager – Media Marketing"
+        subTitle="HT Media Ltd."
+      />
+
+      <RowEntry
+        description="Sector Leader – Pharma/Consumer Durables/Automobiles. Devised product offerings basis market research & consumer insights for multiple industries facilitating Estim. growth of 10% in customer base. Achieved an Annual Recurring Revenue (ARR) of INR 16 lakhs by pitching to 70+ C-level stakeholders & conducting networking events. Mapped 50+ potential clients to B2B sales pipeline through online interviews & field visits for market study with 25% conversion to active clients."
+        name="Aug 2022 – Feb 2023"
+        title="Sector Leader"
+        subTitle="Sharpsell"
+      />
+
+      <RowEntry
+        description="Brand Promotions - Managing Branded Content & IPs for Brands (FMCG, Liquor). Worked with internal, external stakeholders- Content, Brand, Media teams & agencies to deliver plans increasing scope of business by 75%. Strategized Branded Content & IPs creating properties worth INR 1.5 CR for clients, resulting in a 50% increase in revenue for Print business. Organized BTL activations & events in collaboration with B2C client for on-ground customer engagement & trials for new product launch. Worked with design team to conceptualize & fabricate 100+ creatives for 20+ new retail product launches for FMCG, Liquor & BFSI clients. Working on HT City Foodies Product – Strategies for Monetization. Identified organic marketing opportunities for a new product basis market trends & competition benchmarking, growing sales by 15%. Developed incremental branding opportunities generating additional revenue INR 90 lacs by combining value-add services to propositions. Worked on product bundling and designed pricing strategies for customized offerings, increasing revenue by 30% through print and digital."
+        name="June 2020 – July 2022"
+        title="Deputy Manager – Brand Promotions"
+        subTitle="HT Media Ltd."
+      />
+
+      <RowEntry
+        description="Analyze lifestyle supplements and recommend product innovations for HT City supplement. Surveyed and analyzed primary data of 1000+ users, performed secondary research to identify new monetization & growth opportunities. Proposed introduction of 5 new innovative sections for HT City which was executed resulting in increased reach, & brand engagement by 10%. Content strategy for social media and show book revamp of HT Brunch Lifestyle Magazine. Proposed a media strategy to senior management leveraging a tie-in with social media platforms generating 25% YOY growth of page views. Designed a detailed content strategy which increased user base by 15% and generated additional revenue through content & display ads."
+        name="Apr 2019 – May 2019"
+        title="Summer Internship"
+        subTitle="HT Media Ltd."
+      />
+
+      <RowEntry
+        description="GSM Air Data Monitoring using Drive Test, BSNL, Ahmedabad. Analyzed data collected using Agilent, learnt about Agilent Drive Test kit and how Drive Test can help understand network configurations. Differentiated between the genuine (RF) and non-genuine (system) failures, Short call & Long call in coverage aspect for network quality."
+        name="Jan 2017 – Apr 2017"
+        title="Internship"
+        subTitle="BSNL"
+      />
+    </div>
+
+    <div id="academic-projects" class="mb-6">
+      <SectionTitle title="Academic Projects" />
+
+      <RowEntry
+        description="Surveyed & analyzed data of 500+ villagers assessing viability of a new Hospital (1000+ patients) contributing to its successful establishment."
+        name="Jan 2019 – Feb 2019"
+        title="Rural Marketing based live project"
+        subTitle="SUHRC, Pune"
+      />
+
+      <RowEntry
+        description="Analyzed a survey of 1500 customers to generate insights on Patanjali's product portfolio for understanding consumer sentiment & preferences."
+        name="Oct 2018 – Nov 2018"
+        title="Project on Marketing Strategies of Patanjali Ayurveda"
+      />
+    </div>
+
+    <div id="positions-of-responsibility" class="mb-6">
+      <SectionTitle title="Positions of Responsibility" />
+
+      <RowEntry
+        description="Spearheaded a team of 3 to design academic curriculum for 2 subjects for a class of 60+ underprivileged students at 'Make A Difference'."
+        name="Apr 2014 – Dec 2014"
+        title="Academic Mentor"
+        subTitle="Make A Difference, Ahmedabad"
+      />
+    </div>
+
+    <div id="education" class="mb-6">
+      <SectionTitle title="Education" />
+
+      <RowEntry
+        description="Key MBA Subjects: Brand Management, Retail Marketing, Digital Marketing, Market Research, B2B, B2C Marketing, Strategic Management."
+        name="2020"
+        title="MBA Marketing"
+        subTitle="Symbiosis International (Deemed University), Symbiosis Center for Management & Human Resource Development, Pune"
+      />
+
+      <RowEntry
+        description="Key subjects: Electronics and Communication."
+        name="2017"
+        title="B. Tech Electronics and Communication"
+        subTitle="Nirma University, Institute of Technology, Nirma University, Ahmedabad"
+      />
+    </div>
+
+    <div id="skills-and-courses" class="mb-6">
+      <SectionTitle title="Skills and Courses" />
+
+      <RowEntry description="Microsoft Office (Advanced Excel, PowerPoint, Visio, Power BI), Tableau and Salesforce CRM software" name="Technical Skills" />
+      <RowEntry description="Structured Query Language (SQL) and project tracking tools like ‘JIRA’ and Agile" name="Analytical Skills" />
+      <RowEntry description="Advanced Excel & Python for Data Science by Udemy, Microsoft Power BI desktop for Business Intelligence by Udemy, Lean Six Sigma Green Belt by KPMG" name="Certifications" />
+    </div>
+
+    <div id="extra-curricular-and-achievements" class="mb-6">
+      <SectionTitle title="Extra-Curricular and Achievements" />
+
+      <RowEntry description="Volunteered at T.E.A.C.H 2019, Samatva an initiative to impart education & career guidance to students as a part of the ISR club at SCMHRD" name="Extra-Curricular Activities" />
+      <RowEntry description="Attained 2nd position in 400 meter running and relay competition amongst 50+ students and 16th Rank in State in National Cyber Olympiad" name="Achievements" />
+    </div>
+
+    <div id="personal-details" class="mb-6">
+      <SectionTitle title="Personal Details" />
+
+      <RowEntry description="Male | 29 years | English, Hindi, Gujarati" name="Personal Details" />
+    </div>
+
+    <div id="social" class="justify-center flex flex-row mb-2">
+      <div class="mr-4">
+        <SocialIcon icon="fa-brands:linkedin" label="linkedin" url="https://www.linkedin.com/" />
+      </div>
+      <div class="mr-4">
+        <SocialIcon icon="fa-brands:medium" label="medium" url="https://www.medium.com/" />
+      </div>
+      <div class="mr-4">
+        <SocialIcon icon="fa-brands:dev" label="dev" url="https://www.dev.to/" />
+      </div>
+      <div class="mr-4">
+        <SocialIcon
+          icon="fa-brands:stack-overflow"
+          label="stack-overflow"
+          url="#"
+        />
+      </div>
+      <div>
+        <SocialIcon icon="ant-design:global-outlined" label="website" url="https://www.stackoverflow.com/" />
+      </div>
+    </div>
+
+    <script is:inline>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+
+      window.onload = function () {
+        const element = document.getElementById("dark-mode-toggle");
+
+        if (element) {
+          element.addEventListener("click", () => {
+            document.documentElement.classList.toggle("dark");
+
+            localStorage.theme = document.documentElement.classList.contains(
+              "dark"
+            )
+              ? "dark"
+              : "light";
+          });
+        }
+      };
+    </script>
+  </body>
+</html>
